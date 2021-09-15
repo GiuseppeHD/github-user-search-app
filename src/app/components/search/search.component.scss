@@ -1,0 +1,77 @@
+@import "src/themes/variables.scss";
+
+.search-container {
+  display: flex;
+  position: relative;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  border-radius: 15px;
+  height: 69px;
+  margin-bottom: 24px;
+
+  .search-icon {
+    padding: 23px 24px 22px 32px;
+  }
+  .search-button {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 9.5px 10px 9.5px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 106px;
+    height: 50px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white-secondary;
+    background: $primary;
+    color: $white-secondary;
+  }
+  .search-button:hover {
+    background: $primary-hover;
+  }
+  input {
+    margin: auto 0;
+    width: 254px;
+    height: 25px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    background-color: transparent;
+    border: 0px;
+    border-width: 0px;
+    cursor: pointer;
+
+    caret-color: $primary;
+  }
+  input:focus {
+    outline: none;
+  }
+}
+
+.light-theme {
+  background: $white;
+
+  input {
+    color: $dark-blue;
+  }
+  ::placeholder {
+    color: $dark-blue;
+  }
+}
+
+.dark-theme {
+  background: $dark-blue-secondary;
+  input {
+    color: $white-secondary;
+  }
+  ::placeholder {
+    color: $white-secondary;
+  }
+}

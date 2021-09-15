@@ -1,0 +1,9 @@
+<div
+  class="theme-container"
+  [class]="isDark ? 'dark-theme' : 'light-theme'"
+  (click)="switchTheme()"
+>
+  <h4 class="theme-name">{{ isDark ? "LIGHT" : "DARK" }}</h4>
+  <mat-icon svgIcon="custom_moon" *ngIf="!isDark"></mat-icon>
+  <mat-icon svgIcon="custom_sun" *ngIf="isDark"></mat-icon>
+</div>

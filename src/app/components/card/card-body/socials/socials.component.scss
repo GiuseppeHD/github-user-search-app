@@ -1,0 +1,56 @@
+@import "src/themes/variables.scss";
+.container {
+  display: flex;
+  flex-direction: row;
+  .parent {
+    display: flex;
+    flex-direction: column;
+    .location {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 21px;
+    }
+    .website {
+      display: flex;
+      flex-direction: row;
+      margin-right: 62px;
+    }
+    .twitter {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 19.5px;
+    }
+    .company {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+.social-unavailable {
+  opacity: 0.5;
+}
+
+.social {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.social-website:hover {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.light-theme {
+  .social {
+    color: $dark-blue;
+  }
+}
+
+.dark-theme {
+  .social {
+    color: $white-secondary;
+  }
+}

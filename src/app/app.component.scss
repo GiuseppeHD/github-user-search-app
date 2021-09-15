@@ -1,0 +1,44 @@
+@import "src/themes/variables.scss";
+.main-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .main-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 730px;
+
+    .main-wrapper {
+      width: 100%;
+    }
+  }
+}
+
+.light-theme {
+  background: $grey;
+}
+
+.dark-theme {
+  background: $black-secondary;
+}
+
+@media (min-width: 375px) and (max-width: 480px) {
+  .main-container {
+    .main-layout {
+      width: 327px;
+      justify-content: unset;
+    }
+  }
+}
+
+// @media (min-width: 481px) and (max-width: 767px) {
+//   .main-container {
+//     .main-layout {
+//       width: 573px;
+//     }
+//   }
+// }

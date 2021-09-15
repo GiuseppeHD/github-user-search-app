@@ -1,0 +1,43 @@
+@import "src/themes/variables.scss";
+.container {
+  border-radius: 10px;
+  width: 480px;
+  height: 85px;
+  display: flex;
+  margin-bottom: 37px;
+  h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .wrapper-1 {
+    padding: 15px 99px 17px 32px;
+  }
+
+  .wrapper-2 {
+    padding: 15px 82px 17px 0px;
+  }
+
+  .wrapper-3 {
+    padding: 15px 83px 17px 0px;
+  }
+}
+
+.light-theme {
+  background: $grey;
+  h4 {
+    color: $dark-blue;
+  }
+  h2 {
+    color: $black;
+  }
+}
+
+.dark-theme {
+  background: $black-secondary;
+  h4,
+  h2 {
+    color: $white-secondary;
+  }
+}

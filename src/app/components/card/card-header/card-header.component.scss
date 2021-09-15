@@ -1,0 +1,75 @@
+@import "src/themes/variables.scss";
+
+.row-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .name {
+    margin-right: 138px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .date-joined {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+.row-2 {
+  margin-bottom: 20px;
+
+  .username {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.row-3 {
+  margin-bottom: 32px;
+  .bio {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+.light-theme {
+  .name {
+    color: $black;
+  }
+
+  .date-joined {
+    color: $dark-grey;
+  }
+
+  .username {
+    color: $primary;
+  }
+  .bio {
+    color: $dark-blue;
+    opacity: 0.75;
+  }
+}
+
+.dark-theme {
+  .name,
+  .date-joined {
+    color: $white-secondary;
+  }
+
+  .username {
+    color: $primary;
+  }
+  .bio {
+    color: $white-secondary;
+    opacity: 0.5;
+  }
+}

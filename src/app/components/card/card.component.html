@@ -1,0 +1,19 @@
+<div class="card-container" [class]="themeService.currentTheme | async">
+  <div>
+    <img class="avatar" src="../../../assets/profile.png" alt="" />
+  </div>
+  <div class="card-wrapper">
+    <!-- HEADER -->
+    <app-card-header
+      [theme]="themeService.currentTheme | async"
+    ></app-card-header>
+    <!-- HEADER -->
+    <!-- BODY -->
+    <div style="width: 480px; height: 185px">
+      <app-card-body
+        [theme]="themeService.currentTheme | async"
+      ></app-card-body>
+    </div>
+    <!-- BODY -->
+  </div>
+</div>

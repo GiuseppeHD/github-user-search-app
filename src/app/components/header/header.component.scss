@@ -1,0 +1,31 @@
+@import "src/themes/variables.scss";
+.header-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 38px;
+  width: 100%;
+  padding-bottom: 36px;
+
+  .devfinder {
+    height: 39px;
+  }
+  .theme-position {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.light-theme {
+  color: $other-black;
+}
+
+.dark-theme {
+  color: $white-secondary;
+}
+
+@media (min-width: 375px) and (max-width: 480px) {
+  .header-container {
+    padding-top: 31px;
+  }
+}
